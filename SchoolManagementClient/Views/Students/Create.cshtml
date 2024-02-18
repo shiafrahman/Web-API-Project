@@ -1,0 +1,71 @@
+﻿@model Student
+
+<h2>Create New Student</h2>
+
+<div class="container">
+    <form asp-action="Create" id="create-student-form" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label asp-for="StudentName" class="control-label">Student Name</label>
+            <input asp-for="StudentName" class="form-control" required />
+            <div class="invalid-feedback">Please enter the student's name.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
+            <input asp-for="PhoneNumber" class="form-control" required />
+            <div class="invalid-feedback">Please enter the phone number.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="DepartmentId" class="control-label">Department</label>
+            <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.DepartmentId" required>
+                <option value="">Select department</option>
+            </select>
+            <div class="invalid-feedback">Please select the department.</div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address" class="control-label">Address</label>
+            <input asp-for="Address" class="form-control" required />
+            <div class="invalid-feedback">Please enter the address.</div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+
+    <a asp-action="Index" id="back-to-list" class="btn btn-secondary">Back to List</a>
+</div>
+
+
+
+
+
+@*@model Student
+
+    <h2>Create New Student</h2>
+
+    <form asp-action="Create">
+        <div class="form-group">
+            <label asp-for="StudentName" class="control-label"></label>
+            <input asp-for="StudentName" class="form-control" />
+            <span asp-validation-for="StudentName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber" class="control-label"></label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DepartmentId" class="control-label"></label>
+            <select asp-for="DepartmentId" class="form-control" asp-items="ViewBag.DepartmentId"></select>
+            <span asp-validation-for="DepartmentId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address" class="control-label"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <a asp-action="Index">Back to List</a>*@

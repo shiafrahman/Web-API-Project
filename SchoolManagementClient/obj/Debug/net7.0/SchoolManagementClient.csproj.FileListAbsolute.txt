@@ -1,0 +1,74 @@
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\appsettings.Development.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\appsettings.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.staticwebassets.runtime.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.exe
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.deps.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.runtimeconfig.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.pdb
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.AssemblyReference.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.AssemblyInfoInputs.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.AssemblyInfo.cs
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.CoreCompileInputs.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.MvcApplicationPartsAssemblyInfo.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.RazorAssemblyInfo.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.RazorAssemblyInfo.cs
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.SchoolManagementClient.Microsoft.AspNetCore.StaticWebAssets.props
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.build.SchoolManagementClient.props
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.SchoolManagementClient.props
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.SchoolManagementClient.props
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.pack.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.build.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.development.json
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\bundle\SchoolManagementClient.styles.css
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\projectbundle\SchoolManagementClient.bundle.scp.css
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.CopyComplete
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\refint\SchoolManagementClient.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.pdb
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.genruntimeconfig.cache
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\ref\SchoolManagementClient.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\CoreProject(EMP)\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\appsettings.Development.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\appsettings.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.staticwebassets.runtime.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.exe
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.deps.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.runtimeconfig.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\SchoolManagementClient.pdb
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.AssemblyReference.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.AssemblyInfoInputs.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.AssemblyInfo.cs
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.CoreCompileInputs.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.MvcApplicationPartsAssemblyInfo.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.RazorAssemblyInfo.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.RazorAssemblyInfo.cs
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.SchoolManagementClient.Microsoft.AspNetCore.StaticWebAssets.props
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.build.SchoolManagementClient.props
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.SchoolManagementClient.props
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.SchoolManagementClient.props
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.pack.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.build.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\staticwebassets.development.json
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\bundle\SchoolManagementClient.styles.css
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\scopedcss\projectbundle\SchoolManagementClient.bundle.scp.css
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.csproj.CopyComplete
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\refint\SchoolManagementClient.dll
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.pdb
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\SchoolManagementClient.genruntimeconfig.cache
+E:\CoreProject(EMP)\New folder\SchoolManagementSln\SchoolManagementClient\obj\Debug\net7.0\ref\SchoolManagementClient.dll

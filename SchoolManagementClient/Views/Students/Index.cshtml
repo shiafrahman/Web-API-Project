@@ -1,0 +1,323 @@
+﻿@model Dictionary<string, List<Student>>
+
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Page Title</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <h2 class="text-center mt-5">Students</h2>
+
+            <div class="row mt-5">
+                <div>
+                    @*<a asp-action="Create" class="btn btn-primary">Create New Student</a>*@
+                    <a href="#" id="open-create-modal" class="btn btn-primary">Create New Student</a>
+
+
+                </div>
+            </div>
+
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Total Student</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var department in Model)
+                    {
+                        var totalStudentsInDepartment = department.Value.Count;
+                        foreach (var student in department.Value)
+                        {
+                            <tr>
+                                @if (student == department.Value.First())
+                                {
+                                    <td rowspan="@totalStudentsInDepartment">@department.Key</td>
+                                    <td rowspan="@totalStudentsInDepartment">@totalStudentsInDepartment</td>
+                                }
+                                <td>@student.StudentName</td>
+                                <td>@student.PhoneNumber</td>
+                                <td>@student.Address</td>
+
+                                <td>
+                                    @*<a asp-action="Edit" asp-route-id="@student.StudentId" class="btn btn-warning">
+            <i class="fas fa-edit"></i> Edit
+        </a>*@
+                                    <a asp-action="Edit" asp-route-id="@student.StudentId" class="btn btn-warning edit-student" data-url="@Url.Action("Edit", "Students", new { id = student.StudentId })">
+                                        <i class="fas fa-edit"></i> Edit
+                                    </a>
+                                      
+
+                                    @*<a asp-action="Edit" asp-route-id="@student.StudentId" class="btn btn-danger delete-student" data-url="@Url.Action("Delete", "Students", new { id = student.StudentId }) ">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </a>*@
+
+
+
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+            <div id="create-student-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="create-student-modal-label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="create-student-modal-label">Create New Student</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- The content of the modal will be loaded dynamically using Ajax -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="edit-student-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="edit-student-modal-label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="edit-student-modal-label">Edit Student</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- The content of the modal will be loaded dynamically using Ajax -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="delete-student-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="delete-student-modal-label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="delete-student-modal-label">Delete Student</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- The content of the modal will be loaded dynamically using Ajax -->
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            <script>
+                $(document).ready(function () {
+                    // Get the modal element
+                    var modal = $('#create-student-modal');
+
+                    // Get the button that opens the modal
+                    var openModalButton = $('#open-create-modal');
+
+                    // When the user clicks on the button, open the modal
+                    openModalButton.on('click', function () {
+                        $.ajax({
+                            url: '/Students/Create',
+                            type: 'GET',
+                            success: function (response) {
+                                // Set the modal body content with the response from the server
+                                modal.find('.modal-body').html(response);
+
+                                // Show the modal
+                                modal.modal('show');
+                            }
+                        });
+                    });
+
+                    // When the modal is closed, clear the modal body content
+                    modal.on('hidden.bs.modal', function () {
+                        // Clear the modal body content
+                        modal.find('.modal-body').html('');
+                    });
+
+
+
+                    $(document).on('click', '.edit-student', function (e) {
+                        e.preventDefault(); // Prevent default link behavior
+
+                        var url = $(this).data('url');
+                        var editModal = $('#edit-student-modal');
+
+                        $.ajax({
+                            url: url,
+                            type: 'GET',
+                            success: function (response) {
+                                editModal.find('.modal-body').html(response);
+                                editModal.modal('show');
+                            }
+                        });
+                    });
+
+                    // Clear edit student modal content on close
+                    $('#edit-student-modal').on('hidden.bs.modal', function () {
+                        $('#edit-student-modal .modal-body').html('');
+                    });
+
+                    $(document).on('click', '.delete-student', function (e) {
+                        e.preventDefault(); // Prevent default link behavior
+
+                        var studentId = $(this).data('id');
+                        var deleteModal = $('#delete-student-modal');
+
+                        $.ajax({
+                            url: '/Students/Delete',
+                            type: 'GET',
+                            data: { studentId: studentId },
+                            success: function (response) {
+                                // Set the modal body content with the response from the server
+                                deleteModal.find('.modal-body').html(response);
+
+                                // Show the modal
+                                deleteModal.modal('show');
+                            }
+                        });
+                    });
+
+                    // Clear delete student modal content on close
+                    $('#delete-student-modal').on('hidden.bs.modal', function () {
+                        $('#delete-student-modal .modal-body').html('');
+                    });
+
+
+                });
+            </script>
+
+
+</body>
+</html>
+
+
+
+@*<div class="container">
+    <h2 class="text-center mt-5">Students</h2>
+
+    <div class="row mt-5">
+        <div>
+            <a asp-action="Create" class="btn btn-primary">Create New Student</a>
+
+
+        </div>
+    </div>
+
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Total Student</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var department in Model)
+            {
+                var totalStudentsInDepartment = department.Value.Count;
+                foreach (var student in department.Value)
+                {
+                    <tr>
+                        @if (student == department.Value.First())
+                        {
+                            <td rowspan="@totalStudentsInDepartment">@department.Key</td>
+                            <td rowspan="@totalStudentsInDepartment">@totalStudentsInDepartment</td>
+                        }
+                        <td>@student.StudentName</td>
+                        <td>@student.PhoneNumber</td>
+                        <td>@student.Address</td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@student.StudentId" class="btn btn-warning">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@student.StudentId" class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>*@
+
+
+
+
+@*@model Dictionary<string, List<Student>>
+
+    <h2>Students</h2>
+
+    <p>
+        <a asp-action="Create">Create New Student</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Total Student</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var department in Model)
+            {
+                var totalStudentsInDepartment = department.Value.Count;
+                foreach (var student in department.Value)
+                {
+                    <tr>
+                        @if (student == department.Value.First())
+                        {
+                            <td rowspan="@totalStudentsInDepartment">@department.Key</td>
+                          <td rowspan="@totalStudentsInDepartment">@totalStudentsInDepartment</td>
+                        }
+                        <td>@student.StudentName</td>
+                        <td>@student.PhoneNumber</td>
+                        <td>@student.Address</td>
+
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@student.StudentId">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@student.StudentId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>*@
+
+
+
+
